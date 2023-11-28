@@ -120,6 +120,11 @@ table {
 	border-spacing: 0;
 }
 
+.clearfix::after {
+	content: '';
+	display: block;
+	clear: both;
+}
 
 /* Styles */
 
@@ -186,17 +191,19 @@ color: ivory;
 }
 
 .cards-container {
-	font-size: 0;
+	font-size: 14px;
+	margin: 0 -15px;
 }
 
 .card-item {
 	width: 300px;
-	padding: 10px;
-	border-bottom: 1px solid brown;
-	border-right: 1px solid brown;
-	display: inline-block;
-	font-size: 14px;
-	vertical-align: top;
+	padding: 15px;
+	float: left;
+}
+
+.card-item > div {
+  border: 2px solid brown;
+  padding: 10px;
 }
 
 .card-image {
@@ -235,6 +242,9 @@ color: ivory;
   font-weight: 200;
 }
 
+.card-link:hover {
+
+}
 /* FOOTER */
 
 .footer {
@@ -257,5 +267,4 @@ color: ivory;
   margin-left: 20px;
 }
 
-/* FLOAT */
 
