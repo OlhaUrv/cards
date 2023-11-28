@@ -133,6 +133,10 @@ table {
   margin: 0 auto;
 }
 
+.header > .container {
+	font-size: 0;
+}
+
 .logo {
   width: 100px;
   text-align: center;
@@ -148,7 +152,7 @@ table {
 
 .menu {
   text-align: center;
-  width: 990px;
+  width: 1000px;
 }
 
 .menu li {
@@ -159,6 +163,14 @@ table {
 .menu li a {
   text-decoration: none;
   color: brown;
+}
+
+.sub_title {
+	text-transform: uppercase; 
+	font-size: 20px; 
+	text-align: center; 
+	margin: 20px auto; 
+	font-weight: 600;
 }
 
 .logo:hover, .menu li:hover a, .btn:hover, .card-link:hover {
@@ -188,6 +200,7 @@ color: ivory;
 .cards-container {
 	font-size: 0;
 }
+
 
 .card-item {
 	width: 300px;
